@@ -11,13 +11,13 @@ function run(input, output, opts) {
 }
 
 it('morph -ms-flex with a single number declaration', () => {
-    return run('a{ -ms-flex: 1; }', 'a{ -ms-flex: 1 0 auto; }', { });
+    return run('a{ -ms-flex: 1; flex: 1; }', 'a{ -ms-flex: 1; flex: 1; -ms-flex-preferred-size: auto; }', { });
 });
 
 it('morph -ms-flex with a double number declaration', () => {
-    return run('a{ -ms-flex: 0 1; }', 'a{ -ms-flex: 0 1 auto; }', { });
+    return run('a{ -ms-flex: 0 1; flex: 1; }', 'a{ -ms-flex: 0 1; flex: 1; -ms-flex-preferred-size: auto; }', { });
 });
 
 it('don\'t morph -ms-flex with triple value declaration', () => {
-    return run('a{ -ms-flex: 1 1 10px; }', 'a{ -ms-flex: 1 1 10px; }', { });
+    return run('a{ -ms-flex: 1 1 10px; flex: 1 1 10px; }', 'a{ -ms-flex: 1 1 10px; flex: 1 1 10px; }', { });
 });

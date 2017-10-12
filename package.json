@@ -1,7 +1,7 @@
 {
   "name": "postcss-ie-flex-basis-default-auto",
   "version": "0.0.0",
-  "description": "PostCSS plugin that finds all `-ms-flex: <number>` declarations (e.g. from autoprefixer) and appends `auto` to it, overriding the problematic 0px flex basis in IE.",
+  "description": "PostCSS plugin that finds all `-ms-flex: <number>` declarations (e.g. from autoprefixer) and appends `-ms-flex-preferred-size: auto` to the rule, overriding the problematic 0px flex basis in IE.",
   "keywords": [
     "postcss",
     "css",
