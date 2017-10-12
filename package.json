@@ -1,0 +1,37 @@
+{
+  "name": "postcss-ie-flex-basis-default-auto",
+  "version": "0.0.0",
+  "description": "PostCSS plugin that finds all `-ms-flex: <number>` rules (e.g. from autoprefixer) and adds the `-ms-flex-preferred-size: auto` rule beneath it, overriding the problematic 0px flex basis in IE.",
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "ie",
+    "flex",
+    "flex-basis"
+  ],
+  "author": "Hjalti <hjalti@heimkaup.is>",
+  "license": "MIT",
+  "repository": "hjaltielias/postcss-ie-flex-basis-default-auto",
+  "bugs": {
+    "url": "https://github.com/hjaltielias/postcss-ie-flex-basis-default-auto/issues"
+  },
+  "homepage": "https://github.com/hjaltielias/postcss-ie-flex-basis-default-auto",
+  "dependencies": {
+    "postcss": "^6.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-postcss": "^2.0.2",
+    "jest": "^20.0.0"
+  },
+  "scripts": {
+    "test": "jest && eslint *.js"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-postcss/es5",
+    "env": {
+      "jest": true
+    }
+  }
+}
