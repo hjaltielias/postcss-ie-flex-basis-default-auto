@@ -17,8 +17,9 @@
 ```css
 .foo {
   /* Output example */
-  -ms-flex: 1 0 auto;
+  -ms-flex: 1;
   flex: 1;
+  -ms-flex-preferred-size: auto;
 }
 ```
 
